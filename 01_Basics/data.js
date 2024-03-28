@@ -25,4 +25,5 @@ const myfunction=function(){
 //non primitive type = function
 //function return type=object function
 
-
+///+++++++++++++++++++++++
+//stack(primiticve) ,heap memory(non-primitive)
