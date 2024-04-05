@@ -86,19 +86,25 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course//destrcutute of object
+
+
 
 // console.log(courseInstructor);
 console.log(instructor);
 
 // {
 //     "name": "hitesh",
-//     "coursename": "js in hindi",
+//     "coursename": "js in hindi",//json{key:value both are string}
 //     "price": "free"
 // }
 
 [
     {},
-    {},
+    {},            
     {}
 ]
+
+
+
+
