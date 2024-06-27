@@ -16,4 +16,13 @@ console.log("1"+2+2);//122
 console.log(1+2+"2");//32
 
 console.log(true)//true
-console.log(+true)//1
+console.log(+true)//
+
+let counter=100
+console.log(++counter)
+
+let pcounter=200
+console.log(pcounter++)
+console.log(pcounter)
+//in prefix value increments first
+//in postfix value increments later
