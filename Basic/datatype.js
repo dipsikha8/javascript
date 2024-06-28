@@ -20,5 +20,4 @@ let state;
 console.log(typeof age);//number
 console.log(typeof null);//object
 console.log(typeof undefined);//undefined
-//null is a object .//but undefined is a type
-
+//null is a object .//but undefined is a special type
