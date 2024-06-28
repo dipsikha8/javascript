@@ -33,8 +33,20 @@ console.log(typeof bigNumber)
 //function return type=object function
 
 ///+++++++++++++++++++++++
-//stack(primiticve) ,heap memory(non-primitive)
+//stack(primitive)(you get a copy of variable declared  by you) ,heap memory(non-primitive)(refence of original value)
+let myname="Dipu"
+let nickname=myname
+nickname="Nisa"
+console.log(myname)
+console.log(nickname)
 
-
+let userone={
+    email:"Dipsikha@google.com",
+    upi:"user@ybl",
+}
+let usertwo=userone
+usertwo.email="dipu@gamil.com"
+console.log(userone.email);
+console.log(usertwo.email);
 //javascripts is dynamically typed or statically typed?
 //=>
