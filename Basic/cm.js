@@ -9,7 +9,13 @@ console.log("02">1);
 
 console.log(null>0)//false
 console.log(null==0)//false
-console.log(null>=0)//true//conversion problem
+console.log(null>=0)//true//conversion problem//we always try to avoid this type of conventions
+
+console.log(undefined==0);
+console.log(undefined>0);
+console.log(undefined<0);
+
+
 
 //The reason is that an equality check== and comparison><>=<=work differently.
 
