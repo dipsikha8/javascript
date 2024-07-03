@@ -1,25 +1,26 @@
 //array
+//collection of multiple items in a single variable.
 
 const myarr=[0,1,2,3,4,5]
-const myhero=["shaktiman","nagraj"]
+const myhero=["shahrukh khan","salman khan","Amir khan"]
 const myarr2=new Array(1,2,3,4)
 console.log(myarr[1]);
 //Array methods
 
 myarr.push(6)
 myarr.push(7)
-myarr.pop()
+myarr.pop()//removes the last value from array
 console.log(myarr);
 
-console.log(myarr.includes(9));
-console.log(myarr.indexOf(3));
+console.log(myarr.includes(9));//if 9 is present or not in the array
+console.log(myarr.indexOf(3));//it gives the index//if we ask index of a value which is not present in the array it will give -1
 
 
 const newarr=myarr.join()
 console.log(myarr);
-console.log(newarr);
+console.log(newarr);//join bounded our array and converted into string
 
-//slice ,apice
+//slice ,splice
 
 console.log("A ",myarr);
 const myn1=myarr.slice(1,3);
