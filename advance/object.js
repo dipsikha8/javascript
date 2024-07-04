@@ -1,30 +1,39 @@
 //singleton-> Object.create
 
-
+//when we create objects from literals singletone object will not be created
+//when we create objects from constructor singletone object will be created
 //object literals
 const mysym=Symbol("key1");
 const jsuser={
     name:"Dipsikha",
     age:22,
-    [mysym]:"mykey1",
+    [mysym]:"mykey1",//if u want to use it as symbol u have to include it in sqare brackets.otherwise it will be treated as string
     location:"burdwan",
     isloggedin:false,
-    email:"dipsikha200218@gmail.com"
+    email:"dipsikha@gmail.com",
+    lastlogindays:["Monday","Tuesday","Saturday"]
 
 
 }
-console.log(jsuser["email"])
+console.log(jsuser.email)//to access values
+console.log(jsuser["email"])//to access the values
+jsuser.email="dipu@gmail.com"//u can override using '='.
+//Object.freeze(jsuser)//if u dont want anyone to change your object then u can use freeze
 console.log(jsuser[mysym])
+
+//fuctions
+
 jsuser.greeting=function(){
     console.log("Hello js user");
 
 }
 console.log(jsuser.greeting());
 jsuser.greeting2=function(){
-    console.log(`Hello js user,${this.name}`);
+    console.log(`Hello js user,${this.name}`);//String interpolation//this will be used to see the properties available in the object
+
 
 }
-console.log(jsuser,greeting2())
+console.log(jsuser.greeting2())
 const tinder=new object()//singletone object
 const tinderuser={}//non singletone object
 
