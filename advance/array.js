@@ -22,33 +22,34 @@ console.log(newarr);//join bounded our array and converted into string
 
 //slice ,splice
 
-console.log("A ",myarr);
-const myn1=myarr.slice(1,3);
-console.log(myn1);[1,2]
-console.log("B",myarr);
-const myn2=myarr.splice(1,3);
-console.log("c ",myarr);
-console.log(myn2);[1,2,3]
+console.log("A", myarr);
+const myn1=myarr.slice(1,3);//it includes only 1 and 2
+console.log(myn1);
+console.log("B ", myarr);
+const myn2=myarr.splice(1, 3);//
+console.log("c ", myarr);
+console.log(myn2);
 
-//The main differene between slice and splice is  splice modify the original array,it takes that portion and remoes it from the array.[0,4,5]
+//The main differene between slice and splice is  splice modify the original array,it takes that portion and removes it from the array.[0,4,5]
 
 const marvel_heros=["thor","ironman","spiderman"]
-const dc=["superman","flash","batman"]
-
-
-
-
-
-const all=marvel_heros.concat(dc)
+const dc_heros=["superman","flash","batman"]
+//marvel_heros.push(dc_heros);//array takes any input of any datatype .in this example we saw it took the dc_heros array as input in marvel heros
+//console.log(marvel_heros);
+const all=marvel_heros.concat(dc_heros)//concatenation
 
 console.log(all);
-const newhero=[...marvel_heros,...dc]
+const newhero=[...marvel_heros,...dc_heros]//spread operator
 console.log(newhero);
 
-//using flat we can split multiple arrya in one array
+//using flat we can split multiple array in one array
 //Array.flat[infinity]
 
 
-console.log(Array.from("Dipsikha"))
-console.log(Array.from({name:"Dipsikha"}))//returns empty array
+console.log(Array.from("Dipsikha"))//it converts string in array
+console.log(Array.from({name:"Dipsikha"}))//returns empty array//interesting for interview
 
+let score1=100;
+let score2=300;
+let scrore3=500;
+console.log(Array.of(score1,score2,scrore3));//creates newarray from set of elements
