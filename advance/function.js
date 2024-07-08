@@ -60,20 +60,7 @@ function returnsecond(getArray){
 console.log(returnsecond(newaray));
 
 
-//scope
 
-let a=10
-const b=20
-var c=30
-{}//scope
-
-//avoid use of var for variable declaration
-
-//code in if block is block scope//out of if it is global scope
-
-console.log(a);
-console.log(b);
-console.log(c);
 
 
 
