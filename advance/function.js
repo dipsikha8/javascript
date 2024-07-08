@@ -7,14 +7,14 @@ console.log("U");
 
 function saymyname(){
     console.log("D");
-    console.log("I");
+    console.log("I");//scope of the function
     console.log("P");
     console.log("U");
 
 }
-//saymyname()
+//saymyname()/use () for execution
 
-function add1(n1,n2){//parameters n1,n2
+function add1(n1,n2){//parameters n1,n2/when we make defination of the function
    console.log(n1+n2)
 }
 add1(3,4)//arguments 3,4
@@ -40,7 +40,7 @@ console.log(loginuser("Dipu"))
 function calculatorPrice(...n1){//rest operator...n1 used for passing multiple value
    return n1
 }
-console.log(calculatorPrice(200,400,500))
+console.log(calculatorPrice(200,400,500))//it returns an array
 
 
 const user={
