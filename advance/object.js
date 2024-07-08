@@ -115,7 +115,7 @@ console.log(instructor);
 
 [
     {},
-    {},            //API in array format
+    {},            //JSON API in array format
     {}
 ]
 
