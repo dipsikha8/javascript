@@ -73,3 +73,4 @@ const loggedinemail=false
 if(loggedingoogle|| loggedinemail){//in or one condition must be true
     console.log("user logged in");
 }
+
